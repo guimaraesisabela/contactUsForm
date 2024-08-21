@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        background: linear-gradient(to bottom right, #002aff, #bfd5ea);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact-form {
+        width: 300px;
+        padding: 20px;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .contact-form h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+    }
+    .contact-form input[type="text"],
+    .contact-form input[type="tel"],
+    .contact-form textarea {
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 14px;
+    }
+    .contact-form textarea {
+        height: 100px;
+    }
+    .contact-form input[type="submit"] {
+        width: 100%;
+        background: #1e90ff;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+    .contact-form input[type="submit"]:hover {
+        background: #007bff;
+    }
+    .message {
+        text-align: center;
+        margin-top: 20px;
+        color: #666;
+    }
+</style>
+</head>
+<body>
+    <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form action="#">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="tel" name="phone" placeholder="Phone Number" required>
+            <textarea name="message" placeholder="Message" required></textarea>
+            <input type="submit" value="Send Message">
+        </form>
+        <p class="message">Have a nice day!</p>
+    </div>
+</body>
+</html>
